@@ -1178,7 +1178,7 @@ nassh.agent.backends.GSC.SmartCardManager.prototype.connect =
         await this.execute_(nassh.agent.backends.GSC.API.SCardConnect(
             this.context_,
             reader,
-            GoogleSmartCard.PcscLiteClient.API.SCARD_SHARE_EXCLUSIVE,
+            GoogleSmartCard.PcscLiteClient.API.SCARD_SHARE_SHARED,
             GoogleSmartCard.PcscLiteClient.API.SCARD_PROTOCOL_T1));
     this.reader_ = reader;
     this.connected_ = true;
